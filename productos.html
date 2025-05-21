@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - SuperMarkeLasTresB</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .productos-section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .producto-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            overflow: hidden;
+        }
+
+        .producto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .producto-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .producto-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .producto-info h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .producto-info p {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #1e90ff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SuperMarkeLasTresB</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos-section">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="https://chedrauimx.vtexassets.com/arquivos/ids/46089663/7501372813104_00.jpg?v=638788260715070000"
+                        alt="Arroz Premium 1kg">
+                    <div class="producto-info">
+                        <h3>Arroz Premium 1kg</h3>
+                        <p>RD$60</p>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="https://d31f1ehqijlcua.cloudfront.net/n/f/2/6/5/f265c1c7357a0d198cac347720f97010f4972e27_DairyandEggs_98938_01.jpg"
+                        alt="Leche Entera 1L">
+                    <div class="producto-info">
+                        <h3>Leche Entera 1L</h3>
+                        <p>RD$75</p>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/14673251-800-800/20112023.jpg"
+                        alt="Aceite Vegetal 1L">
+                    <div class="producto-info">
+                        <h3>Aceite Vegetal 1L</h3>
+                        <p>RD$120</p>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="https://wongfood.vtexassets.com/arquivos/ids/717473-800-auto?v=638576122555130000"
+                        alt="Pollo entero">
+                    <div class="producto-info">
+                        <h3>Pollo Entero</h3>
+                        <p>RD$250</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SuperMarkeLasTresB</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorías - SuperMarkeLasTresB</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .categorias-section {
+            padding: 2rem;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .categorias-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .categoria-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .categoria-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        .categoria-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            object-fit: contain;
+        }
+
+        .categoria-card h3 {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .productos-relacionados {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #f0f8ff;
+            border-top: 1px solid #ddd;
+            padding: 0.5rem;
+            z-index: 1;
+        }
+
+        .categoria-card:hover .productos-relacionados {
+            display: block;
+        }
+
+        .productos-relacionados ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .productos-relacionados li {
+            font-size: 0.95rem;
+            padding: 0.3rem 0;
+            border-bottom: 1px dashed #ccc;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SuperMarkeLasTresB</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categorias-section">
+            <h2>Categorías de Productos</h2>
+            <div class="categorias-grid">
+                <div class="categoria-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2701/2701938.png" alt="Alimentos">
+                    <h3>Alimentos</h3>
+                    <div class="productos-relacionados">
+                        <ul>
+                            <li>Arroz Integral</li>
+                            <li>Harina de Maíz</li>
+                            <li>Fideos Spaghetti</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categoria-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Lácteos">
+                    <h3>Lácteos</h3>
+                    <div class="productos-relacionados">
+                        <ul>
+                            <li>Leche Entera</li>
+                            <li>Queso Mozzarella</li>
+                            <li>Mantequilla</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categoria-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1076/1076905.png" alt="Limpieza">
+                    <h3>Limpieza</h3>
+                    <div class="productos-relacionados">
+                        <ul>
+                            <li>Detergente líquido</li>
+                            <li>Desinfectante</li>
+                            <li>Toallas húmedas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categoria-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/924/924915.png" alt="Bebidas">
+                    <h3>Bebidas</h3>
+                    <div class="productos-relacionados">
+                        <ul>
+                            <li>Jugo de Naranja</li>
+                            <li>Agua mineral</li>
+                            <li>Refresco Cola</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categoria-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5141/5141534.png" alt="Carnes">
+                    <h3>Carnes y embutidos</h3>
+                    <div class="productos-relacionados">
+                        <ul>
+                            <li>Carne molida</li>
+                            <li>Salami</li>
+                            <li>Pechuga de Pollo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SuperMarkeLasTresB</p>
+    </footer>
+</body>
+
+</html>
